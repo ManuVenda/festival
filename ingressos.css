@@ -1,0 +1,129 @@
+.titulo {
+    text-align: center;
+    color: #000000;
+}
+
+h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 40px;
+    color: #00FFFF;
+    text-decoration: underline;
+}
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000000;
+}
+h3 {
+    font-family: Georgia, serif;
+    color: #00FFFF;
+    font-style: italic;
+}
+
+body {
+    background: linear-gradient(#FF4500, #FFA500, #7B68EE, #00FF7F);
+    text-align: center;
+}
+
+.icone {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    border-radius: 100px;
+}
+
+.icone:hover {
+    transform: scale(1.5);
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+th {
+    background-color: #FF4500;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #00FFFF;
+}
+
+tr:nth-child(odd) {
+    background-color: #A020F0;
+}
+
+.foto {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 200px auto;
+    width: 200px;
+    z-index: -1;
+}
+
+.foto.esquerda {
+    left: 0;
+    background-image: url('https://i.pinimg.com/736x/ec/12/25/ec12250bcafba30cf7ef641831b147b8.jpg');
+}
+
+.foto.direita {
+    right: 0;
+    background-image: url('https://i.pinimg.com/736x/ec/12/25/ec12250bcafba30cf7ef641831b147b8.jpg');
+}
+
+fieldset {
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px #4682B4;
+    background-color: #F8F8FF;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    fieldset {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .icone {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    fieldset {
+        width: 80%;
+    }
+
+    .icone {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1025px) {
+    fieldset {
+        width: 600px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .icone {
+        width: 300px;
+    }
+}

@@ -1,0 +1,119 @@
+h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 40px;
+    color: #00FFFF;
+    text-decoration: underline;
+}
+
+body {
+    background: linear-gradient(#FF4500, #FFA500, #00FFFF);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.foto {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 200px auto;
+    width: 200px;
+    z-index: -1;
+}
+
+.foto.esquerda {
+    left: 0;
+    background-image: url('https://i.pinimg.com/736x/ec/12/25/ec12250bcafba30cf7ef641831b147b8.jpg');
+}
+
+.foto.direita {
+    right: 0;
+    background-image: url('https://i.pinimg.com/736x/ec/12/25/ec12250bcafba30cf7ef641831b147b8.jpg');
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width:600px){
+	header {
+		padding: 5px;
+	}
+
+	.menu {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	section {
+		padding: 10px;
+	}
+
+	footer {
+		padding: 5px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media(min-width:601px) and (max-width:1024px){
+	header {
+		padding: 15px;
+	}
+
+	.menu {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.menu li {
+		margin: 0 10px;
+	}
+
+	section {
+		padding: 30px;
+	}
+
+	footer {
+		padding: 15px;
+	}
+}
+
+@media(min-width:1025px){
+	header {
+		padding: 20px;
+	}
+
+	.menu {
+		justify-content: center; 
+	}
+
+	.menu li {
+		margin: 0 15px;
+	}
+
+	section {
+		padding: 40px;
+	}
+
+	footer {
+		padding: 20px;
+	}
+}
