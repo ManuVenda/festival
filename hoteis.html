@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservas para hotéis</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href="hotel.css">
+</head>
+
+<body>
+<h1><center>Reserva de hotel</h1></center>
+ <h3>Nossa parceria com a agência de viagens veio para te ajudar a reservar os melhores hotéis para o evento</h3>
+ <hr width="60%" color="#00FFFF">
+
+	<form method='Post' action='banco.de.dados.py'>
+		<fieldset><legend><h3>Login</h3></legend>
+			<label>E-mail:<input type='email' name='email' placeholder='e-mail'></label>
+			<label>Senha:<input type='password' name='senha' maxlength='8' placeholder='até 8 dígitos'></label><p>
+		</fieldset>
+
+	<fieldset><legend><h3>Informações importantes para hospedagem</h3></legend>
+		<label>Nome completo:<input type='text' name='nome completo' placeholder='nome completo'></label><p>
+		<label>Tel. para contato:<input type='number' name='telefone' placeholder='telefone'></label><p>
+		<label>Check-in:<input type='date' name='dataIda'></label>
+		<label>Check-out:<input type='date' name='dataVolta'></label><p>
+		<label>Origem:<input type='text' name='origem' placeholder='local de origem'></label><p>
+		<label>Sexo:<input type='radio' name='sexo'>Masculino</input></label>
+				<input type='radio' name='sexo'>Feminino</input></label>
+				<input type='radio' name='sexo'>Outro</input></label><p>
+		<label>Quantas pessoas vão?:<input type='number' name='pessoas' placeholder='escreva em números'></label>
+			<p>Exigências:<label><input type='checkbox' name='exigencia' checked>Café da manhã</input></label>
+				<label><input type='checkbox' name='exigencia'>Piscina</input></label>
+				<label><input type='checkbox' name='exigencia'>Pets</input></label>
+				<label><input type='checkbox' name='exigencia'>Outras refeições</input></label>
+				<label><input type='checkbox' name='exigencia'>Academia</input></label>
+			<p>Dia(s) de show:<label><input type='checkbox' name='exigencia' checked>26/09</input></label>
+				<label><input type='checkbox' name='exigencia'>27/09</input></label>
+				<label><input type='checkbox' name='exigencia'>28/09</input></label>
+			
+				
+			<p><h3>Observações:</p></h3>
+			<p><textarea cols=30 rows=5 maxlength=200></textarea></p>
+	</fieldset>
+<input type='submit' />
+
+</div>
+</body>
+</html>
