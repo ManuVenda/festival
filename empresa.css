@@ -11,6 +11,12 @@ body {
     padding: 0;
     text-align: center;
 }
+.imagem img {
+    border: 5px solid #000;         
+    border-radius: 10px;            
+    max-width: 100%;                
+    height: auto;                   
+}
 
 .foto {
     position: fixed;
